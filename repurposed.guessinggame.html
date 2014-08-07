@@ -11,7 +11,7 @@
 
     <p>Question 1: What year was Seattle founded?</p>
       <form> <input type="text"> </input> </form>
-        <button id="q1" type="button">Submit Answer</button>
+        <button id="q1" type="button" onClick="javascript: q1('input')">Submit Answer</button>
 
     <p>Question 2: How many major hills does Seattle have?</p>
       <form> <input type="text"> </input> </form>
@@ -41,7 +41,7 @@
   while (!correct) // do unil we get the right answer
   {
     // ask the user to guess and conver the anser to a number
-    guess = parseFloat(("How many miles are in a half marathon?"));
+    guess = parseFloat(prompt("How many miles are in a half marathon?"));
 
     if (guess === answer) // correct guess, done
     {
