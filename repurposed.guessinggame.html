@@ -1,28 +1,55 @@
-<script>
-var guess;
-var answer = 13.1; // A half-marathon is 13.1 miles
+<!DOCTYPE html>
+  <h1 id="header">A Seattle Guessing Game</h1>
 
-var correct = false; // true when user guesses correctly
-var errorDirection; // was guess low or high?
+  <h2>This quiz will test your knowledge of Seattle and its history. Click the Space Needle to start!</h2>
 
-while (!correct) // do unil we get the right answer
-{
-  // ask the user to guess and conver the anser to a number
-  guess = parseFloat(prompt("How many miles are in a half marathon?"));
+  <img src="http://1.bp.blogspot.com/_9DbWcozSA54/S76v_y_FjBI/AAAAAAAAA9s/-KgPwyGCxn0/s320/Space+Needle+Silhouette.png"></img>
+  
+  <hr>
 
-  if (guess === answer) // correct guess, done
+    <p>Question 1: What year was Seattle founded?</p>
+      <form><input type="text"></input></form>
+        <button class="q1" type="button">Submit Answer</button>
+    <p>Question 2: How many major hills does Seattle have?</p>
+      <form><input type="text"></input></form>
+        <button class="q2" type="button">Submit Answer</button>
+    <p>Question 3: When was the Space Needle's debut?</p>
+      <form><input type="text"></input></form>
+        <button class="q3" type="button">Submit Answer</button>
+    <p>Question 4: How many people live in King County?</p>
+      <form><input type="text"></input></form>
+        <button class="q4" type="button">Submit Answer</button>
+    <p>Question 5: What famous actor was buried in Lake View Cemetery?</p>
+      <form><input type="text"></input></form>
+        <button class="q5" type="button">Submit Answer</button>
+  
+
+  <script>/*
+  var guess;
+  var answer = 13.1; // A half-marathon is 13.1 miles
+
+  var correct = false; // true when user guesses correctly
+  var errorDirection; // was guess low or high?
+
+  while (!correct) // do unil we get the right answer
   {
-    alert("Nice job!");
-    correct = true;
-  }
+    // ask the user to guess and conver the anser to a number
+    guess = parseFloat(("How many miles are in a half marathon?"));
 
-  else // Not correct. Let player know and try again
-  {
-    if (answer > guess)
-      errorDirection = "low.";
-    else errorDirection = "high.";
-    alert("Please try again, you were too " + errorDirection);
-  } // end else
-} // end while
+    if (guess === answer) // correct guess, done
+    {
+      alert("Nice job!");
+      correct = true;
+    }
 
-</script>
+    else // Not correct. Let player know and try again
+    {
+      if (answer > guess)
+        errorDirection = "low.";
+      else errorDirection = "high.";
+      alert("Please try again, you were too " + errorDirection);
+    } // end else
+  } // end while
+
+ */ </script>
+</html>
