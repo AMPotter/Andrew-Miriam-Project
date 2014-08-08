@@ -3,18 +3,7 @@ Andrew-Miriam-Project
 
 Project 1: JS + HTML
 
-Ideas:
-
-Add images to skeleton of Miriam's guessing game submission.
-
-Add function that tells you how far off your guess was.
-
-Add guess-counter.
-
-Change subject from marathon length to something Seattle related.
-
-Add background image of Seattle. Overhead map?
-
-One question: Show an image of a place, ask user to name the place.
-
-Give users multiple chances to answer each question.
+The input in this project comes from the user in the form of answers to quiz questions.
+The output will be a correct/incorrect confirmation message, displayed below the submission button.
+The quiz is about Seattle history, as we are in Seattle.
+Fun fact: You can enter "7" or "seven" in on question two, and both are acceptable answers!
