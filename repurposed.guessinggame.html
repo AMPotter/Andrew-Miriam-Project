@@ -1,50 +1,45 @@
 <!DOCTYPE html>
 <html>
+<body background="http://images.fineartamerica.com/images-medium-large-5/seattle-washington-skyline-michael-tompsett.jpg">
   
-  <hr>
-  <h1 id="header">A Seattle Guessing Game</h1>
+  <h1 id="header"><center>A Seattle Guessing Game</center></h1>
 
-  <h2>This quiz will test your knowledge of Seattle and its history.</h2>
+  <h2><center>This quiz will test your knowledge of Seattle and its history.</center></h2>
 
-  <img src="http://1.bp.blogspot.com/_9DbWcozSA54/S76v_y_FjBI/AAAAAAAAA9s/-KgPwyGCxn0/s320/Space+Needle+Silhouette.png"></img>
+  <center><img src="http://1.bp.blogspot.com/_9DbWcozSA54/S76v_y_FjBI/AAAAAAAAA9s/-KgPwyGCxn0/s320/Space+Needle+Silhouette.png"></img></center>
   
-  <hr>
 
-  <body>
-
-    <p>Question 1: What year was Seattle founded?</p>
-      <form> <input id="q1" type="text"> </input> </form>
-        <button id="a1" onclick="subm1()">Submit Answer</button>
+    <p><strong>Question 1: What year was Seattle founded?</strong></p>
+      <form> <input id="q1"> </input> </form>
+        <button onclick="subm1()">Submit Answer</button>
       <p id="result1"></p>
 
-    <p>Question 2: How many major hills does Seattle have?</p>
-      <form> <input id="q2" type="text"> </input> </form>
-        <button id="a2">Submit Answer</button>
+    <p><strong>Question 2: How many major hills does Seattle have?</strong></p>
+      <form> <input id="q2"> </input> </form>
+        <button onclick="subm2()">Submit Answer</button>
       <p id="result2"></p>
         
-    <p>Question 3: When was the Space Needle's debut?</p>
-      <form> <input id="q3" type="text"> </input> </form>
-        <button id="a3">Submit Answer</button>
+    <p><strong>Question 3: When was the Space Needle's debut?</strong></p>
+      <form> <input id="q3"> </input> </form>
+        <button onclick="subm3()">Submit Answer</button>
       <p id="result3"></p>
         
-    <p>Question 4: How many people live in King County?</p>
-      <form> <input id="q4" type="text"> </input> </form>
-        <button id="a4">Submit Answer</button>
+    <p><strong>Question 4: How many people live in King County?</strong></p>
+      <form> <input id="q4"> </input> </form>
+        <button onclick="subm4()">Submit Answer</button>
       <p id="result4"></p>
         
-    <p>Question 5: What famous actor was buried in Lake View Cemetery?</p>
-      <form> <input id="q5" type="text"> </input> </form>
-        <button id="a5" type="button">Submit Answer</button>
+    <p><strong>Question 5: What famous actor was buried in Lake View Cemetery?</strong></p>
+      <form> <input id="q5"> </input> </form>
+        <button onclick="subm5()">Submit Answer</button>
       <p id="result5"></p>
 
-  </body>
-  
-  <hr>
 
   <script>
 
     function subm1() {
-      if (document.getElementById("q1") == "1851") {
+      var answer1 = document.getElementById("q1").value;
+      if (answer1 == "1851") {
         document.getElementById("result1").innerHTML = "Correct!";
       } else {
         document.getElementById("result1").innerHTML = "Sorry, try again.";
@@ -52,15 +47,45 @@
     };
 
     function subm2() {
-      if (document.getElementById("q2") == "7") {
+      var answer2 = document.getElementById("q2").value;
+      if (answer2 == "7") {
         document.getElementById("result2").innerHTML = "Correct!";
-      } else if (document.getElementById("q2") == "seven") {
+      } else if (answer2 == "seven") {
         document.getElementById("result2").innerHTML = "Correct!";
       } else {
         document.getElementById("result2").innerHTML = "Sorry, try again.";
       }
     };
 
+    function subm3() {
+      var answer3 = document.getElementById("q3").value;
+      if (answer3 == "1962") {
+        document.getElementById("result3").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result3").innerHTML = "Sorry, try again.";
+      }
+    };
+
+    function subm4() {
+      var answer4 = document.getElementById("q4").value;
+      if (answer4 == "2,000,000") {
+        document.getElementById("result4").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result4").innerHTML = "Sorry, try again.";
+      }
+    };
+
+    function subm5() {
+      var answer5 = document.getElementById("q5").value;
+      if (answer5 == "Bruce Lee") {
+        document.getElementById("result5").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result5").innerHTML = "Sorry, try again.";
+      }
+    };
+
   </script>
+
+</body>
 
 </html>
