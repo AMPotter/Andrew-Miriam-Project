@@ -1,62 +1,66 @@
 <!DOCTYPE html>
+<html>
   
   <hr>
   <h1 id="header">A Seattle Guessing Game</h1>
 
-  <h2>This quiz will test your knowledge of Seattle and its history. Click the Space Needle to start!</h2>
+  <h2>This quiz will test your knowledge of Seattle and its history.</h2>
 
   <img src="http://1.bp.blogspot.com/_9DbWcozSA54/S76v_y_FjBI/AAAAAAAAA9s/-KgPwyGCxn0/s320/Space+Needle+Silhouette.png"></img>
   
   <hr>
 
+  <body>
+
     <p>Question 1: What year was Seattle founded?</p>
-      <form> <input type="text"> </input> </form>
-        <button id="q1" type="button" onClick="javascript: q1('input')">Submit Answer</button>
+      <form> <input id="q1" type="text"> </input> </form>
+        <button id="a1" onclick="subm1()">Submit Answer</button>
+      <p id="result1"></p>
 
     <p>Question 2: How many major hills does Seattle have?</p>
-      <form> <input type="text"> </input> </form>
-        <button id="q2" type="button">Submit Answer</button>
-
+      <form> <input id="q2" type="text"> </input> </form>
+        <button id="a2">Submit Answer</button>
+      <p id="result2"></p>
+        
     <p>Question 3: When was the Space Needle's debut?</p>
-      <form> <input type="text"> </input> </form>
-        <button id="q3" type="button">Submit Answer</button>
-
+      <form> <input id="q3" type="text"> </input> </form>
+        <button id="a3">Submit Answer</button>
+      <p id="result3"></p>
+        
     <p>Question 4: How many people live in King County?</p>
-      <form> <input type="text"> </input> </form>
-        <button id="q4" type="button">Submit Answer</button>
-
+      <form> <input id="q4" type="text"> </input> </form>
+        <button id="a4">Submit Answer</button>
+      <p id="result4"></p>
+        
     <p>Question 5: What famous actor was buried in Lake View Cemetery?</p>
-      <form> <input type="text"> </input> </form>
-        <button id="q5" type="button">Submit Answer</button>
+      <form> <input id="q5" type="text"> </input> </form>
+        <button id="a5" type="button">Submit Answer</button>
+      <p id="result5"></p>
+
+  </body>
   
   <hr>
 
-  <script>/*
-  var guess;
-  var answer = 13.1; // A half-marathon is 13.1 miles
+  <script>
 
-  var correct = false; // true when user guesses correctly
-  var errorDirection; // was guess low or high?
+    function subm1() {
+      if (document.getElementById("q1") == "1851") {
+        document.getElementById("result1").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result1").innerHTML = "Sorry, try again.";
+      }
+    };
 
-  while (!correct) // do unil we get the right answer
-  {
-    // ask the user to guess and conver the anser to a number
-    guess = parseFloat(prompt("How many miles are in a half marathon?"));
+    function subm2() {
+      if (document.getElementById("q2") == "7") {
+        document.getElementById("result2").innerHTML = "Correct!";
+      } else if (document.getElementById("q2") == "seven") {
+        document.getElementById("result2").innerHTML = "Correct!";
+      } else {
+        document.getElementById("result2").innerHTML = "Sorry, try again.";
+      }
+    };
 
-    if (guess === answer) // correct guess, done
-    {
-      alert("Nice job!");
-      correct = true;
-    }
+  </script>
 
-    else // Not correct. Let player know and try again
-    {
-      if (answer > guess)
-        errorDirection = "low.";
-      else errorDirection = "high.";
-      alert("Please try again, you were too " + errorDirection);
-    } // end else
-  } // end while
-
- */ </script>
 </html>
